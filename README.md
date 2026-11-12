@@ -1,0 +1,189 @@
+# 👋 Hi, I'm Faiyaz Ali
+
+### 🐍 Python Backend Developer | 🤖 AI Engineering Enthusiast | 🚀 Building Intelligent Applications
+
+I am a Python developer passionate about building backend applications and exploring the possibilities of Artificial Intelligence.
+
+My focus is on developing practical software solutions using Python, Django, FastAPI, Generative AI, and Agentic AI technologies.
+
+I enjoy experimenting with new technologies, solving problems, building projects, and continuously improving my software engineering skills.
+
+---
+
+## 👨‍💻 About Me
+
+- 🐍 Passionate about Python Backend Development.
+- 🤖 Exploring Generative AI, LLMs, and Agentic AI.
+- 🚀 Building AI-powered applications and intelligent automation systems.
+- 🔌 Experienced in developing REST APIs using Django REST Framework and FastAPI.
+- 🗄️ Interested in database design, optimization, and backend architecture.
+- 🧠 Interested in AI research, experimentation, and development.
+- 💡 Believe in learning by building real-world projects.
+- 🎯 Currently focused on becoming a stronger Backend and AI Engineer.
+
+---
+
+## ⚡ What I Do Every Day
+
+- 🐍 Write Python code and build backend applications.
+- 🤖 Experiment with LLMs, AI agents, and Generative AI.
+- 🧠 Explore Agentic AI architectures and intelligent workflows.
+- 🔌 Develop and test RESTful APIs.
+- 🗄️ Work with PostgreSQL, MySQL, and database management.
+- 🧪 Write automated tests, debug applications, and improve code quality.
+- 🔍 Research new AI technologies, frameworks, and development tools.
+- 🚀 Build practical projects to solve real-world problems.
+- 📚 Study system design, software architecture, and backend engineering.
+- 💻 Explore AI coding assistants and developer productivity tools.
+- 🔄 Push code, maintain repositories, and document my development journey.
+
+---
+
+## 🛠️ Tech Stack & Tools
+
+### 💻 Programming Languages
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+### ⚙️ Backend Development
+
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![Django REST Framework](https://img.shields.io/badge/Django_REST_Framework-A30000?style=for-the-badge&logo=django&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+
+### 🎨 Frontend Development
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![HTMX](https://img.shields.io/badge/HTMX-3366CC?style=for-the-badge&logo=htmx&logoColor=white)
+
+### 🗄️ Databases
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+
+### 🤖 AI & Generative AI
+
+![Generative AI](https://img.shields.io/badge/Generative_AI-412991?style=for-the-badge)
+![LLMs](https://img.shields.io/badge/LLMs-8A2BE2?style=for-the-badge)
+![Groq](https://img.shields.io/badge/Groq-F55036?style=for-the-badge&logo=groq&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
+![AI Agents](https://img.shields.io/badge/AI_Agents-6366F1?style=for-the-badge)
+![RAG](https://img.shields.io/badge/RAG-00897B?style=for-the-badge)
+
+### 🧪 Testing & API Tools
+
+![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)
+
+### 🔧 Development Tools
+
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+
+### ☁️ Cloud & Deployment
+
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Render](https://img.shields.io/badge/Render-000000?style=for-the-badge&logo=render&logoColor=white)
+
+---
+
+## 🚀 Featured Projects
+
+### 🤖 AI Support Agent
+An AI-powered customer support application built using Python and FastAPI.
+
+**Key Features:**
+- LLM integration using Groq.
+- Agentic tool calling.
+- Calculator and order status tools.
+- Knowledge base search.
+- AI policy guardrails.
+- Automated testing with Pytest.
+
+**Technologies:** Python, FastAPI, Groq, LLMs, Pytest.
+
+### 🔐 JWT Authentication API
+A secure authentication and task management backend built using Django REST Framework.
+
+**Key Features:**
+- JWT authentication.
+- Access and refresh token management.
+- User registration and login.
+- Email verification.
+- Password reset functionality.
+- Role-based access control.
+- API documentation using drf-spectacular.
+
+**Technologies:** Python, Django, DRF, PostgreSQL, SimpleJWT.
+
+### 🚗 Car Booking System
+A car rental and booking application.
+
+**Key Features:**
+- Car listing and booking management.
+- Rental availability calendar.
+- Payment gateway integration.
+- Backend API development.
+
+**Technologies:** Python, FastAPI, React, MongoDB.
+
+---
+
+## 📊 GitHub Statistics
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=mdfaiyazali&show_icons=true&theme=tokyonight&hide_border=true" height="170" />
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mdfaiyazali&layout=compact&theme=tokyonight&hide_border=true" height="170" />
+
+</div>
+
+### 🔥 GitHub Contribution Streak
+
+<div align="center">
+
+<img src="https://streak-stats.demolab.com?user=mdfaiyazali&theme=tokyonight&hide_border=true" />
+
+</div>
+
+---
+
+## 🎯 Currently Learning
+
+- 🤖 Advanced Agentic AI Development.
+- 🧠 Retrieval-Augmented Generation (RAG).
+- 🔗 AI Agent Tool Calling and Orchestration.
+- 🐍 Advanced Python and Backend Architecture.
+- ⚡ Django + HTMX.
+- ⚛️ React Components and Props.
+- 🏗️ System Design and Scalable Applications.
+- ☁️ Docker and Cloud Deployment.
+
+---
+
+## 📫 Connect With Me
+
+- 💻 GitHub: [@mdfaiyazali](https://github.com/mdfaiyazali)
+- 💼 LinkedIn: [Connect with me](www.linkedin.com/in/mohd-faiyaz-ali-38-dev)
+- 📧 Email: faiyazali.dev@gmail.com
+
+---
+
+<div align="center">
+
+### 💡 "Learn continuously. Build consistently. Improve every day."
+
+⭐ Thanks for visiting my GitHub profile!
+
+</div>

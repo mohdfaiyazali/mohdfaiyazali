@@ -1,283 +1,169 @@
-# 🤖 AI Support Agent
+# 👋 Hi, I'm Faiyaz Ali
 
-An AI-powered customer support application built with **Python, FastAPI, and Groq LLMs**. The application uses an agent-based architecture with tool calling, policy guardrails, and knowledge-base retrieval to handle customer support queries intelligently.
+### 🐍 Python Backend Developer | 🤖 AI Engineering Enthusiast | 🚀 Building Intelligent Applications
 
-The goal is to build a reliable AI support assistant that can understand customer requests, execute relevant tools, retrieve information, and provide helpful responses while avoiding unsupported claims.
+I am a Python developer passionate about building backend applications and exploring the possibilities of Artificial Intelligence.
 
-## 🚀 Key Features
+My focus is on developing practical software solutions using Python, Django, FastAPI, Generative AI, and Agentic AI technologies.
 
-- **AI-Powered Conversations:** Uses Groq-hosted Large Language Models (LLMs) to understand and respond to customer queries.
-- **Agentic Tool Calling:** Allows the AI agent to select and execute tools based on user requests.
-- **Calculator Tool:** Performs mathematical calculations.
-- **Order Status Lookup:** Retrieves order information using order IDs.
-- **Knowledge Base Search:** Searches available support documentation to answer customer questions.
-- **Policy Guardrails:** Prevents unsupported policy responses and restricts potentially misleading answers.
-- **Error Handling:** Handles unknown orders, unsupported requests, and AI service errors.
-- **REST API:** Provides backend endpoints using FastAPI.
-- **API Documentation:** Interactive API documentation through Swagger UI.
-- **Automated Testing:** Uses Pytest to validate application functionality, tools, and guardrails.
-
-## 🛠️ Technology Stack
-
-| Technology | Purpose |
-|---|---|
-| Python 3.11+ | Backend programming |
-| FastAPI | REST API development |
-| Groq API | Large Language Model integration |
-| LLM Tool Calling | Agent interaction with external tools |
-| Pytest | Automated testing |
-| Pydantic | Data validation |
-| Uvicorn | ASGI application server |
-| Git & GitHub | Version control |
-
-## 🏗️ Project Architecture
-
-The application follows a modular architecture that separates API endpoints, agent logic, tools, services, and guardrails.
-
-```text
-ai-support-agent/
-│
-├── app/
-│   ├── main.py
-│   │
-│   ├── agents/
-│   │   ├── tools.py
-│   │   └── ...
-│   │
-│   ├── services/
-│   │   └── llm_service.py
-│   │
-│   └── ...
-│
-├── tests/
-│   ├── test_tools.py
-│   ├── test_guardrails.py
-│   └── ...
-│
-├── .env
-├── .gitignore
-├── requirements.txt
-└── README.md
-```
-
-*Note: The directory structure above illustrates the main application components.*
-
-## ⚙️ Installation and Setup
-
-### 1. Clone the Repository
-
-```bash
-https://github.com/mohdfaiyazali/AI-powered-customer-support-agent.git
-```
-
-Navigate into the project directory:
-
-```bash
-cd ai-support-agent
-```
-
-### 2. Create a Virtual Environment
-
-For Windows (Git Bash):
-
-```bash
-python -m venv sup-venv
-```
-
-Activate the environment:
-
-```bash
-source sup-venv/Scripts/activate
-```
-
-### 3. Install Dependencies
-
-```bash
-python -m pip install -r requirements.txt
-```
-
-### 4. Configure Environment Variables
-
-Create a `.env` file in the project root directory.
-
-```env
-GROQ_API_KEY=your_groq_api_key
-GROQ_MODEL=your_supported_groq_model
-```
-
-Replace the placeholder values with your actual Groq API credentials and supported model configuration.
-
-**Important:** Never upload your `.env` file or expose API keys on GitHub.
-
-### 5. Run the Application
-
-Start the FastAPI development server:
-
-```bash
-python -m uvicorn app.main:app --reload
-```
-
-The application will run at:
-
-```text
-http://127.0.0.1:8000
-```
-
-### 6. Access API Documentation
-
-Open Swagger UI in your browser:
-
-```text
-http://127.0.0.1:8000/docs
-```
-
-You can use Swagger UI to explore and test the available API endpoints.
-
-## 🧠 AI Agent Capabilities
-
-The AI support agent is designed to use tools when additional information or computation is required.
-
-| Tool | Description |
-|---|---|
-| `calculate` | Performs mathematical calculations |
-| `get_order_status` | Checks customer order information |
-| `search_knowledge_base` | Retrieves relevant support information |
-
-### Example Use Cases
-
-**1. Mathematical Calculation**
-
-User:
-
-```text
-What is 25 multiplied by 12?
-```
-
-Expected result:
-
-```text
-300
-```
-
-**2. Order Status**
-
-User:
-
-```text
-Can you check my order ORD-1001?
-```
-
-The agent uses the order lookup tool to retrieve available order information.
-
-**3. Unknown Order**
-
-User:
-
-```text
-Check the status of ORD-9999.
-```
-
-The agent handles unavailable order information without inventing an order status.
-
-**4. Knowledge Base Search**
-
-User:
-
-```text
-What is your return policy?
-```
-
-The agent searches available knowledge-base information before providing an answer.
-
-## 🛡️ Guardrails and Safety
-
-Reliability is an important part of this project.
-
-The application implements policy guardrails to:
-
-- Prevent the AI from inventing company policies.
-- Avoid generating unsupported refund and return information.
-- Restrict answers when the knowledge base does not contain sufficient information.
-- Provide safe fallback responses for unsupported requests.
-- Avoid fabricating order information or delivery dates.
-
-The objective is to make AI-generated customer support responses more reliable and controlled.
-
-## 🧪 Running Tests
-
-This project uses Pytest for automated testing.
-
-Run the complete test suite:
-
-```bash
-python -m pytest -v
-```
-
-Run individual test modules:
-
-```bash
-python -m pytest tests/test_tools.py -v
-```
-
-```bash
-python -m pytest tests/test_guardrails.py -v
-```
-
-Testing covers:
-
-- Calculator tool operations.
-- Order status retrieval.
-- Unknown order handling.
-- Knowledge-base functionality.
-- Policy guardrails.
-- AI service error handling.
-- API behavior.
-
-## 📈 Development Goals
-
-This project is an ongoing learning and development initiative focused on practical AI engineering.
-
-Planned improvements include:
-
-- [ ] Integrate a vector database for semantic knowledge retrieval.
-- [ ] Implement Retrieval-Augmented Generation (RAG).
-- [ ] Add conversation memory.
-- [ ] Implement user authentication and authorization.
-- [ ] Add customer conversation history.
-- [ ] Integrate a production-ready database.
-- [ ] Add structured logging and monitoring.
-- [ ] Implement Docker-based deployment.
-- [ ] Deploy the application to a cloud platform.
-
-## 🎯 Skills Demonstrated
-
-Through this project, I am developing practical experience in:
-
-- Python Backend Development
-- FastAPI and REST API Development
-- Generative AI Application Development
-- Large Language Models (LLMs)
-- AI Agent Architecture
-- Function Calling and Tool Integration
-- Prompt Engineering
-- AI Safety and Guardrails
-- Knowledge Base Integration
-- API Error Handling
-- Automated Testing with Pytest
-- Git and GitHub
-
-## 👨‍💻 Developer
-
-**Faiyaz Ali**
-
-Python Backend Developer | AI Engineering Enthusiast
-
-Interested in building practical applications using Python, Django, FastAPI, Generative AI, and Agentic AI architectures.
-
-## 📄 License
-
-This project is intended for educational and development purposes.
+I enjoy experimenting with new technologies, solving problems, building projects, and continuously improving my software engineering skills.
 
 ---
 
-⭐ If you find this project interesting, consider giving the repository a star!
+## 👨‍💻 About Me
+
+- 🐍 Passionate about Python Backend Development.
+- 🤖 Exploring Generative AI, LLMs, and Agentic AI.
+- 🚀 Building AI-powered applications and intelligent automation systems.
+- 🔌 Experienced in developing REST APIs using Django REST Framework and FastAPI.
+- 🗄️ Interested in database design, optimization, and backend architecture.
+- 🧠 Interested in AI research, experimentation, and development.
+- 💡 Believe in learning by building real-world projects.
+- 🎯 Currently focused on becoming a stronger Backend and AI Engineer.
+
+---
+
+## ⚡ What I Do Every Day
+
+- 🐍 Write Python code and build backend applications.
+- 🤖 Experiment with LLMs, AI agents, and Generative AI.
+- 🧠 Explore Agentic AI architectures and intelligent workflows.
+- 🔌 Develop and test RESTful APIs.
+- 🗄️ Work with PostgreSQL, MySQL, and database management.
+- 🧪 Write automated tests, debug applications, and improve code quality.
+- 🔍 Research new AI technologies, frameworks, and development tools.
+- 🚀 Build practical projects to solve real-world problems.
+- 📚 Study system design, software architecture, and backend engineering.
+- 💻 Explore AI coding assistants and developer productivity tools.
+- 🔄 Push code, maintain repositories, and document my development journey.
+
+---
+
+## 🛠️ Tech Stack
+
+### Programming Languages
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+### Backend Development
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![DRF](https://img.shields.io/badge/DRF-A30000?style=for-the-badge&logo=django&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![REST API](https://img.shields.io/badge/REST_API-02569B?style=for-the-badge)
+
+### Artificial Intelligence
+![Generative AI](https://img.shields.io/badge/Generative_AI-412991?style=for-the-badge)
+![LLM](https://img.shields.io/badge/LLMs-8A2BE2?style=for-the-badge)
+![Groq](https://img.shields.io/badge/Groq-F55036?style=for-the-badge)
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
+
+### Databases
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+
+### Frontend Development
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![HTMX](https://img.shields.io/badge/HTMX-3366CC?style=for-the-badge)
+
+### Tools & Technologies
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+
+---
+
+## 🚀 Featured Projects
+
+### 🤖 AI Support Agent
+An AI-powered customer support application built using Python and FastAPI.
+
+**Key Features:**
+- LLM integration using Groq.
+- Agentic tool calling.
+- Calculator and order status tools.
+- Knowledge base search.
+- AI policy guardrails.
+- Automated testing with Pytest.
+
+**Technologies:** Python, FastAPI, Groq, LLMs, Pytest.
+
+### 🔐 JWT Authentication API
+A secure authentication and task management backend built using Django REST Framework.
+
+**Key Features:**
+- JWT authentication.
+- Access and refresh token management.
+- User registration and login.
+- Email verification.
+- Password reset functionality.
+- Role-based access control.
+- API documentation using drf-spectacular.
+
+**Technologies:** Python, Django, DRF, PostgreSQL, SimpleJWT.
+
+### 🚗 Car Booking System
+A car rental and booking application.
+
+**Key Features:**
+- Car listing and booking management.
+- Rental availability calendar.
+- Payment gateway integration.
+- Backend API development.
+
+**Technologies:** Python, FastAPI, React, MongoDB.
+
+---
+
+## 📊 GitHub Statistics
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=mdfaiyazali&show_icons=true&theme=tokyonight&hide_border=true" height="170" />
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mdfaiyazali&layout=compact&theme=tokyonight&hide_border=true" height="170" />
+
+</div>
+
+### 🔥 GitHub Contribution Streak
+
+<div align="center">
+
+<img src="https://streak-stats.demolab.com?user=mdfaiyazali&theme=tokyonight&hide_border=true" />
+
+</div>
+
+---
+
+## 🎯 Currently Learning
+
+- 🤖 Advanced Agentic AI Development.
+- 🧠 Retrieval-Augmented Generation (RAG).
+- 🔗 AI Agent Tool Calling and Orchestration.
+- 🐍 Advanced Python and Backend Architecture.
+- ⚡ Django + HTMX.
+- ⚛️ React Components and Props.
+- 🏗️ System Design and Scalable Applications.
+- ☁️ Docker and Cloud Deployment.
+
+---
+
+## 📫 Connect With Me
+
+- 💻 GitHub: [@mdfaiyazali](https://github.com/mdfaiyazali)
+- 💼 LinkedIn: [Connect with me](YOUR_LINKEDIN_URL)
+- 📧 Email: YOUR_EMAIL_ADDRESS
+
+---
+
+<div align="center">
+
+### 💡 "Learn continuously. Build consistently. Improve every day."
+
+⭐ Thanks for visiting my GitHub profile!
+
+</div>
